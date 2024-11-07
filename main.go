@@ -96,7 +96,7 @@ func main() {
 		if err != nil {
 			fmt.Println("Error fetching stats:", err)
 			errorCount++
-			if errorCount >= 3 {
+			if errorCount > 3 {
 				fmt.Println("Unable to fetch server statistics")
 				break
 			}
